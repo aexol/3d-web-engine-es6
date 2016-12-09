@@ -1,0 +1,49 @@
+{
+  "name": "3d-web-engine-es6",
+  "version": "1.0.0",
+  "description": "3D WebGL engine written in es6 javascript. Perfect for small and big 3d apps. Great solution for creation of interactive mobile ads also.",
+  "main": "lib/index.js",
+  "jsnext:main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "clean": "rimraf lib",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aexol/3d-web-engine-es6.git"
+  },
+  "babel": {
+    "presets": ["es2015"],
+    "plugins": ["transform-class-properties"]
+  },
+  "files":["lib","src"],
+  "keywords": [
+    "3d",
+    "webgl",
+    "engine",
+    "games",
+    "game",
+    "ads",
+    "interactive",
+    "ads",
+    "mobile",
+    "ads",
+    "interactive",
+    "mobile",
+    "ads",
+    "javascript",
+    "es6"
+  ],
+  "author": "Aexol <aexol@aexol.com> (http://aexol.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aexol/3d-web-engine-es6/issues"
+  },
+  "homepage": "https://github.com/aexol/3d-web-engine-es6#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0"
+  }
+}
